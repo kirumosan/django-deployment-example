@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+  {% block body_block %}
+  <h1>Index: Landing page</h1>
+  <!-- link to the basic_app url anchor in urls.py(slave) -->
+  <ul>
+    <li><a href="{% url 'basic_app:other' %}">other</a></li>
+    <li><a href="{% url 'basic_app:relative' %}">relative</a></li>
+    <li><a href="{% url 'basic_app:user_login' %}">login</a></li>
+    <li><a href="{% url 'admin:index' %}">Admin</a></li>
+  </ul>
+  {% endblock %}
